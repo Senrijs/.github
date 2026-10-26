@@ -34,8 +34,8 @@
 - **依存ゼロ** — 本体は `Request` と `Response` だけで書かれています
 
 ```ts
-import { createApp } from "senri";
-import { serve } from "senri/serve";
+import { createApp } from "@senrijs/senri";
+import { serve } from "@senrijs/senri/serve";
 
 const app = createApp({ dev: true });
 
