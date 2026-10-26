@@ -35,8 +35,8 @@
 - **Zero dependencies** — the core uses only `Request` and `Response`.
 
 ```ts
-import { createApp } from "senri";
-import { serve } from "senri/serve";
+import { createApp } from "@senrijs/senri";
+import { serve } from "@senrijs/senri/serve";
 
 const app = createApp({ dev: true });
 
