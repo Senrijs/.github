@@ -44,10 +44,10 @@ app.get("/users/:id", ({ id }) => ({ id }));
 serve(app); // → http://localhost:3927
 ```
 
-> なぜ 3927 番かって？ 1里 ≒ 3.927km なので、千里でおよそ 3927km だからです。
+> なぜ 3927 番? 1里 ≒ 3.927km なので、千里でおよそ 3927km だからです。
 
 ---
 
 <p align="center">
-  <sub>Made in Japan 🇯🇵</sub>
+  <sub><a href="https://github.com/skyia-jp">@skyia-jp</a> コミュニティから生まれたプロジェクト · Made in Japan 🇯🇵</sub>
 </p>
