@@ -50,5 +50,5 @@ serve(app); // → http://localhost:3927
 ---
 
 <p align="center">
-  <sub>Made in Japan 🇯🇵</sub>
+  <sub>A project from the <a href="https://github.com/skyia-jp">@skyia-jp</a> community · Made in Japan 🇯🇵</sub>
 </p>
