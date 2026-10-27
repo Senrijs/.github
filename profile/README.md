@@ -24,7 +24,7 @@
 
 | | | Status |
 | --- | --- | --- |
-| **[Senri](https://github.com/Senrijs/Senri)** | A TypeScript web framework for **Bun, Deno and Node.js**, built on Web standards. | 🚧 In development |
+| **[Senri](https://github.com/Senrijs/Senri)** | A TypeScript web framework for **Bun, Deno, Node.js, Cloudflare Workers and browsers**, built on Web standards. | 🚧 In development |
 | **Ippo** | A React (and later Vue) meta-framework built on Senri. | 📝 Planned |
 
 ## Why Senri?
@@ -36,9 +36,10 @@
 
 ```ts
 import { createApp } from "@senrijs/senri";
+import { devtools } from "@senrijs/senri/dev";
 import { serve } from "@senrijs/senri/serve";
 
-const app = createApp({ dev: true });
+const app = createApp({ dev: devtools() });
 
 app.get("/users/:id", ({ id }) => ({ id }));
 
