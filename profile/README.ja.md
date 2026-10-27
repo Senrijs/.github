@@ -23,7 +23,7 @@
 
 | | | 状況 |
 | --- | --- | --- |
-| **[Senri](https://github.com/Senrijs/Senri)** | **Bun・Deno・Node.js** で動く、Web 標準ベースの TypeScript 製 Web フレームワーク | 🚧 開発中 |
+| **[Senri](https://github.com/Senrijs/Senri)** | **Bun・Deno・Node.js・Cloudflare Workers・ブラウザ** で動く、Web 標準ベースの TypeScript 製 Web フレームワーク | 🚧 開発中 |
 | **Ippo** | Senri の上に乗る、React(のちに Vue)対応のメタフレームワーク | 📝 予定 |
 
 ## Senri の特徴
@@ -35,9 +35,10 @@
 
 ```ts
 import { createApp } from "@senrijs/senri";
+import { devtools } from "@senrijs/senri/dev";
 import { serve } from "@senrijs/senri/serve";
 
-const app = createApp({ dev: true });
+const app = createApp({ dev: devtools() });
 
 app.get("/users/:id", ({ id }) => ({ id }));
 
